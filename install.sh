@@ -13,9 +13,9 @@ UUID=$(grep -o 'UUID=[^ ]*' $HOME/admin/config/apache/sites.conf | sed 's/UUID=/
 VMESS_WSPATH=$(grep -o 'VMESS_WSPATH=[^ ]*' $HOME/admin/config/apache/sites.conf | sed 's/VMESS_WSPATH=//')
 VLESS_WSPATH=$(grep -o 'VLESS_WSPATH=[^ ]*' $HOME/admin/config/apache/sites.conf | sed 's/VLESS_WSPATH=//')
 
-UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
-VMESS_WSPATH=${VMESS_WSPATH:-'/vmess'}
-VLESS_WSPATH=${VLESS_WSPATH:-'/vless'}
+UUID=${UUID:-'49cd0f75-ac94-4a70-8dc3-801bebc2af45'}
+VMESS_WSPATH=${VMESS_WSPATH:-'/49cd0f75-ac94-4a70-8dc3-801bebc2af45-vmess'}
+VLESS_WSPATH=${VLESS_WSPATH:-'/49cd0f75-ac94-4a70-8dc3-801bebc2af45-vless'}
 URL=${USER}.alwaysdata.net
 
 wget -q -O $TMP_DIRECTORY/config.json https://raw.githubusercontent.com/hiifeng/V2ray-for-AlwaysData/main/config.json
